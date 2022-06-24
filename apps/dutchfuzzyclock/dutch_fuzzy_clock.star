@@ -137,7 +137,7 @@ def main(config):
     )
 
 def get_schema():
-    dialectOptions = [
+    languageOptions = [
         schema.Option(
             display = "Dutch",
             value = "nl-NL",
@@ -166,8 +166,8 @@ def get_schema():
                 name = "Language",
                 icon = "language",
                 desc = "Dutch, or British or American English",
-                default = dialectOptions[0].value,
-                options = dialectOptions,
+                default = languageOptions[0].value,
+                options = languageOptions,
             ),
         ],
     )
